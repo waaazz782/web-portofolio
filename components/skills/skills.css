@@ -1,0 +1,345 @@
+/* ==========================================================================
+   SKILLS COMPONENT STYLES
+   ========================================================================== */
+
+.skills-card-content {
+  padding: 24px;
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 20px;
+  align-items: center;
+}
+
+.skills-bars-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.skill-label-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 6px;
+  font-size: 0.88rem;
+  font-weight: 600;
+}
+
+.skill-tech-name {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #fff;
+}
+
+.skill-icon-svg {
+  width: 16px;
+  height: 16px;
+}
+
+.skill-icon-lucide {
+  width: 16px;
+  height: 16px;
+  color: var(--secondary-cyan, #38bdf8);
+}
+
+.text-amber { color: #f59e0b; }
+.text-purple { color: #c084fc; }
+
+.skill-percent {
+  font-family: var(--font-mono, monospace);
+  font-size: 0.84rem;
+  color: var(--text-secondary, #94a3b8);
+}
+
+.skill-progress-track {
+  height: 7px;
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: var(--radius-full, 9999px);
+  overflow: hidden;
+  position: relative;
+}
+
+.skill-progress-fill {
+  height: 100%;
+  border-radius: var(--radius-full, 9999px);
+  background: linear-gradient(90deg, #9333ea, #38bdf8);
+  box-shadow: 0 0 12px rgba(168, 85, 247, 0.6);
+  transition: width 1.2s cubic-bezier(0.1, 1, 0.1, 1);
+}
+
+/* ==========================================================================
+   ORBIT LOGO STACK — Orbit Widget
+   ========================================================================== */
+
+.skills-orbit-widget {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 0;
+  padding: 4px 0;
+}
+
+/* ── Orbit System container ── */
+.orbit-system {
+  position: relative;
+  width: min(100%, 390px);
+  aspect-ratio: 1.28 / 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  isolation: isolate;
+}
+
+/* ── Layered elliptical paths ── */
+.orbit-path-ring {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+}
+
+.orbit-path-ring--1 {
+  width: 31%;
+  height: 42%;
+  border: 1px solid rgba(56, 189, 248, 0.46);
+  box-shadow: 0 0 12px rgba(56, 189, 248, 0.14), inset 0 0 10px rgba(56, 189, 248, 0.08);
+}
+
+.orbit-path-ring--2 {
+  width: 52%;
+  height: 66%;
+  border: 1px solid rgba(168, 85, 247, 0.52);
+  box-shadow: 0 0 13px rgba(147, 51, 234, 0.22), inset 0 0 12px rgba(147, 51, 234, 0.08);
+  transform: translate(-50%, -50%) rotate(-13deg);
+}
+
+.orbit-path-ring--3 {
+  width: 76%;
+  height: 86%;
+  border: 1px solid rgba(147, 51, 234, 0.38);
+  box-shadow: 0 0 18px rgba(147, 51, 234, 0.18);
+  transform: translate(-50%, -50%) rotate(12deg);
+}
+
+.orbit-path-ring--4 {
+  width: 96%;
+  height: 98%;
+  border: 1px solid rgba(129, 140, 248, 0.2);
+  box-shadow: 0 0 18px rgba(56, 189, 248, 0.08);
+  transform: translate(-50%, -50%) rotate(-7deg);
+}
+
+.orbit-path-ring--2::after,
+.orbit-path-ring--3::after {
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  top: 12%;
+  left: 20%;
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: 0 0 7px 2px rgba(192, 132, 252, 0.9), 0 0 16px rgba(56, 189, 248, 0.55);
+}
+
+.orbit-path-ring--3::after {
+  top: auto;
+  left: auto;
+  right: 13%;
+  bottom: 21%;
+  width: 3px;
+  height: 3px;
+  background: #67e8f9;
+  box-shadow: 0 0 8px 2px rgba(56, 189, 248, 0.8);
+}
+
+.orbit-particle {
+  position: absolute;
+  z-index: 2;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: #f5f3ff;
+  box-shadow: 0 0 8px 2px rgba(192, 132, 252, 0.8), 0 0 15px rgba(56, 189, 248, 0.42);
+  animation: particlePulse 3.8s ease-in-out infinite;
+  pointer-events: none;
+}
+
+.orbit-particle--1 { left: 10%; top: 49%; }
+.orbit-particle--2 { left: 23%; top: 16%; width: 3px; height: 3px; animation-delay: -1s; }
+.orbit-particle--3 { left: 48%; top: 5%; animation-delay: -2.2s; }
+.orbit-particle--4 { right: 12%; top: 24%; width: 5px; height: 5px; background: #67e8f9; animation-delay: -0.7s; }
+.orbit-particle--5 { right: 5%; top: 57%; width: 3px; height: 3px; animation-delay: -1.8s; }
+.orbit-particle--6 { right: 25%; bottom: 8%; animation-delay: -2.8s; }
+.orbit-particle--7 { left: 29%; bottom: 11%; width: 3px; height: 3px; background: #c4b5fd; animation-delay: -1.3s; }
+.orbit-particle--8 { left: 18%; top: 68%; width: 3px; height: 3px; animation-delay: -3.2s; }
+
+/* ── Technology nodes follow independent elliptical paths ── */
+.orbit-logo-wrap {
+  position: absolute;
+  z-index: 3;
+  left: 50%;
+  top: 50%;
+  width: clamp(38px, 12%, 50px);
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: linear-gradient(145deg, rgba(25, 21, 50, 0.94), rgba(7, 12, 29, 0.88));
+  border: 1px solid rgba(168, 85, 247, 0.78);
+  box-shadow:
+    0 0 13px rgba(147, 51, 234, 0.42),
+    0 0 25px rgba(56, 189, 248, 0.12),
+    inset 0 0 12px rgba(56, 189, 248, 0.1);
+  display: grid;
+  place-items: center;
+  padding: 9px;
+  offset-anchor: center;
+  offset-rotate: 0deg;
+  offset-path: ellipse(38% 31% at 50% 50%);
+  animation: nodeOrbit 26s linear infinite;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.orbit-logo-wrap:hover {
+  border-color: rgba(103, 232, 249, 0.98);
+  box-shadow:
+    0 0 17px rgba(56, 189, 248, 0.82),
+    0 0 34px rgba(147, 51, 234, 0.55),
+    inset 0 0 12px rgba(56, 189, 248, 0.18);
+}
+
+.orbit-logo-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+  filter: drop-shadow(0 0 4px rgba(255, 255, 255, 0.28));
+  pointer-events: none;
+}
+
+.orbit-node--1 { offset-path: ellipse(26% 20% at 50% 50%); animation-duration: 18s; animation-delay: -2s; }
+.orbit-node--2 { offset-path: ellipse(38% 31% at 50% 50%); animation-duration: 25s; animation-direction: reverse; animation-delay: -8s; }
+.orbit-node--3 { offset-path: ellipse(41% 40% at 50% 50%); animation-duration: 31s; animation-delay: -16s; }
+.orbit-node--4 { offset-path: ellipse(41% 40% at 50% 50%); animation-duration: 31s; animation-direction: reverse; animation-delay: -4s; }
+.orbit-node--5 { offset-path: ellipse(35% 29% at 50% 50%); animation-duration: 23s; animation-delay: -12s; }
+.orbit-node--6 { offset-path: ellipse(41% 40% at 50% 50%); animation-duration: 34s; animation-delay: -23s; }
+
+/* ── Center Flutter hub ── */
+.orbit-center-hub {
+  position: relative;
+  z-index: 5;
+  width: clamp(70px, 22%, 86px);
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: radial-gradient(circle at center, rgba(2, 86, 155, 0.30) 0%, rgba(10, 8, 22, 0.95) 70%);
+  border: 1.5px solid rgba(56, 189, 248, 0.65);
+  box-shadow:
+    0 0 20px rgba(56, 189, 248, 0.50),
+    0 0 44px rgba(147, 51, 234, 0.22),
+    inset 0 0 16px rgba(56, 189, 248, 0.10);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  cursor: pointer;
+  transition: box-shadow 0.4s ease, transform 0.4s ease;
+}
+
+.orbit-center-hub:hover {
+  transform: scale(1.13);
+  box-shadow:
+    0 0 30px rgba(56, 189, 248, 0.85),
+    0 0 65px rgba(147, 51, 234, 0.48),
+    inset 0 0 22px rgba(56, 189, 248, 0.18);
+}
+
+.orbit-center-logo {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  filter: drop-shadow(0 0 5px rgba(56, 189, 248, 0.75)) brightness(1.1);
+}
+
+/* Pulsing glow aura behind Flutter logo */
+.orbit-center-glow {
+  position: absolute;
+  inset: -30px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(56, 189, 248, 0.24) 0%, rgba(147, 51, 234, 0.12) 38%, transparent 72%);
+  animation: orbitPulse 3s ease-in-out infinite;
+  pointer-events: none;
+  z-index: -1;
+}
+
+/* ── Keyframes ── */
+@keyframes nodeOrbit {
+  from { offset-distance: 0%; }
+  to { offset-distance: 100%; }
+}
+
+@keyframes orbitPulse {
+  0%, 100% { opacity: 0.55; transform: scale(1); }
+  50%       { opacity: 1.00; transform: scale(1.18); }
+}
+
+@keyframes particlePulse {
+  0%, 100% { opacity: 0.35; transform: scale(0.75); }
+  50% { opacity: 1; transform: scale(1.2); }
+}
+
+/* ── Responsive ── */
+@media (max-width: 900px) {
+  .skills-card-content {
+    grid-template-columns: 1fr;
+  }
+
+  .orbit-system {
+    width: min(100%, 340px);
+  }
+
+  .orbit-center-hub {
+    width: clamp(66px, 20%, 78px);
+    padding: 14px;
+  }
+
+  .orbit-logo-wrap {
+    width: clamp(36px, 12%, 46px);
+    padding: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .orbit-system {
+    width: min(100%, 290px);
+  }
+
+  .orbit-logo-wrap {
+    width: 38px;
+    padding: 8px;
+  }
+
+  .orbit-center-hub {
+    width: 68px;
+    padding: 13px;
+  }
+
+  .orbit-particle--2,
+  .orbit-particle--6,
+  .orbit-particle--8 {
+    display: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .orbit-logo-wrap,
+  .orbit-particle,
+  .orbit-center-glow {
+    animation-duration: 0.01ms;
+    animation-iteration-count: 1;
+  }
+}
+
+

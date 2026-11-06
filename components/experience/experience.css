@@ -1,0 +1,83 @@
+/* ==========================================================================
+   EXPERIENCE COMPONENT STYLES
+   ========================================================================== */
+
+.experience-section {
+  padding: 48px 0;
+}
+
+.timeline-container {
+  padding: 32px 36px;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  position: relative;
+}
+
+.timeline-container::before {
+  content: '';
+  position: absolute;
+  top: 36px;
+  bottom: 36px;
+  left: 45px;
+  width: 2px;
+  background: linear-gradient(to bottom, #a855f7, #38bdf8, rgba(168, 85, 247, 0.1));
+}
+
+.timeline-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 24px;
+  position: relative;
+}
+
+.timeline-dot {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: var(--bg-dark, #06060c);
+  border: 3px solid var(--neon-violet, #a855f7);
+  box-shadow: 0 0 12px rgba(168, 85, 247, 0.7);
+  margin-top: 4px;
+  z-index: 2;
+  flex-shrink: 0;
+}
+
+.timeline-content {
+  flex: 1;
+}
+
+.timeline-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 4px;
+}
+
+.timeline-role {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.timeline-date {
+  font-size: 0.82rem;
+  color: var(--neon-violet, #a855f7);
+  background: rgba(168, 85, 247, 0.12);
+  padding: 3px 10px;
+  border-radius: var(--radius-full, 9999px);
+  border: 1px solid rgba(168, 85, 247, 0.25);
+}
+
+.timeline-org {
+  font-size: 0.88rem;
+  font-weight: 500;
+  color: var(--secondary-cyan, #38bdf8);
+  margin-bottom: 6px;
+}
+
+.timeline-desc {
+  font-size: 0.88rem;
+  color: var(--text-secondary, #94a3b8);
+  line-height: 1.6;
+}

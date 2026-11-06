@@ -1,0 +1,530 @@
+/* ==========================================================================
+   RESPONSIVE LAYOUT OVERRIDES
+   Keep desktop component styles intact and tune layouts for smaller screens.
+   ========================================================================== */
+
+/* Shared two-card layout; collapses to one column on compact screens. */
+html,
+body {
+  max-width: 100%;
+  overflow-x: clip;
+}
+
+.mid-deck-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+  align-items: start;
+}
+
+/* Tablet and compact laptop */
+@media (max-width: 1100px) {
+  .main-wrapper {
+    padding-right: 32px;
+    padding-left: 32px;
+  }
+
+  .mid-deck-grid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 24px;
+  }
+
+  .contact-card {
+    padding: 32px;
+  }
+}
+
+/* Mobile navigation and layout */
+@media (max-width: 900px) {
+  .top-navbar {
+    padding: 8px 0;
+    margin-bottom: 10px;
+  }
+
+  .navbar-inner {
+    flex-wrap: wrap;
+    gap: 4px 8px;
+    padding: 8px 12px;
+  }
+
+  .nav-brand {
+    min-width: 0;
+    gap: 8px;
+  }
+
+  .brand-name {
+    white-space: nowrap;
+  }
+
+  .nav-actions {
+    flex-shrink: 0;
+  }
+
+  .brand-name {
+    font-size: 0.95rem;
+  }
+
+  .top-menu {
+    order: 3;
+    display: flex;
+    width: 100%;
+    gap: 22px;
+    overflow-x: auto;
+    overscroll-behavior-x: contain;
+    scrollbar-width: none;
+    padding: 2px 1px 5px;
+  }
+
+  .top-menu::-webkit-scrollbar {
+    display: none;
+  }
+
+  .menu-link {
+    flex: 0 0 auto;
+    font-size: 0.84rem;
+    min-height: 32px;
+    display: inline-flex;
+    align-items: center;
+  }
+
+  .nav-actions {
+    margin-left: auto;
+    gap: 8px;
+  }
+
+  .cv-btn {
+    padding: 9px 14px;
+    font-size: 0.82rem;
+  }
+
+  .hero-content-grid {
+    min-height: 0;
+    gap: 28px;
+  }
+
+  .hero-left {
+    width: 100%;
+  }
+
+  .avatar-stage {
+    width: min(100%, 340px);
+    max-width: 100%;
+  }
+
+  .hud-svg-diagram {
+    width: 320px;
+    height: 320px;
+  }
+
+  .section-top-bar {
+    flex-wrap: wrap;
+    gap: 14px;
+  }
+
+  .projects-filter-bar {
+    max-width: 100%;
+    overflow-x: auto;
+    overscroll-behavior-x: contain;
+    scrollbar-width: none;
+    padding-bottom: 4px;
+  }
+
+  .projects-filter-bar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .filter-btn,
+  .view-all-link {
+    flex: 0 0 auto;
+  }
+
+  .timeline-container {
+    padding: 28px 24px 28px 30px;
+  }
+
+  .timeline-container::before {
+    left: 39px;
+  }
+}
+
+@media (max-width: 768px) {
+  html {
+    scroll-padding-top: 110px;
+  }
+
+  .main-wrapper {
+    margin-left: 0;
+    width: 100%;
+    max-width: none;
+    padding: 0 20px 52px;
+  }
+
+  .hero-section {
+    padding-top: 20px;
+  }
+
+  .hero-content-grid {
+    gap: 20px;
+  }
+
+  .hero-left {
+    gap: 16px;
+  }
+
+  .role-badge-row {
+    justify-content: center;
+  }
+
+  .flutter-role-tag {
+    flex-wrap: wrap;
+    justify-content: center;
+    font-size: 0.98rem;
+  }
+
+  .hero-stats-deck {
+    gap: 12px;
+    margin-top: 28px;
+  }
+
+  .stat-card {
+    padding: 16px;
+    gap: 12px;
+  }
+
+  .stat-value {
+    font-size: 1.35rem;
+  }
+
+  .card-header-bar {
+    padding: 16px 18px;
+  }
+
+  .about-card-content,
+  .skills-card-content {
+    padding: 18px;
+  }
+
+  .projects-section,
+  .experience-section {
+    padding: 36px 0;
+  }
+
+  .contact-section {
+    padding-top: 32px;
+  }
+
+  .contact-card {
+    padding: 24px;
+  }
+
+  .contact-grid {
+    gap: 30px;
+  }
+
+  .ai-studio-section {
+    padding-top: 32px;
+  }
+
+  .ai-chat-card {
+    height: min(480px, 70vh);
+    min-height: 360px;
+  }
+
+  .ai-chat-body {
+    padding: 16px;
+  }
+
+  .ai-chat-footer {
+    padding: 12px;
+  }
+
+  .ai-chat-modal {
+    width: min(350px, calc(100vw - 32px));
+    max-height: calc(100dvh - 32px);
+    right: 16px;
+    bottom: 16px;
+  }
+
+  section[id] {
+    scroll-margin-top: 110px;
+  }
+}
+
+/* Narrow phones */
+@media (max-width: 480px) {
+  .main-wrapper {
+    padding: 0 14px 40px;
+  }
+
+  .top-navbar {
+    padding-top: 5px;
+    margin-bottom: 6px;
+  }
+
+  .navbar-inner {
+    gap: 2px 8px;
+    padding: 5px 8px;
+    border-radius: 14px;
+  }
+
+  .nav-brand {
+    gap: 5px;
+  }
+
+  .brand-logo-badge {
+    width: 26px;
+    height: 26px;
+  }
+
+  .brand-name {
+    font-size: 0.74rem;
+    letter-spacing: 0;
+  }
+
+  .nav-actions {
+    gap: 6px;
+  }
+
+  .cv-btn {
+    min-height: 32px;
+    padding: 6px 7px;
+    gap: 3px;
+    font-size: 0.68rem;
+  }
+
+  .theme-mode-btn {
+    width: 30px;
+    height: 30px;
+  }
+
+  .top-menu {
+    gap: 12px;
+    padding: 0 1px;
+  }
+
+  .menu-link {
+    min-height: 24px;
+    font-size: 0.78rem;
+  }
+
+  .hero-title {
+    font-size: clamp(2rem, 10vw, 2.5rem);
+  }
+
+  .hero-desc {
+    font-size: 0.9rem;
+  }
+
+  .hero-btn-group {
+    gap: 10px;
+  }
+
+  .hero-socials {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .avatar-stage {
+    width: min(290px, 100%);
+    height: 300px;
+  }
+
+  .hud-svg-diagram {
+    width: 260px;
+    height: 260px;
+  }
+
+  .code-snippet-widget {
+    left: -8px;
+    width: 150px;
+    max-width: 58vw;
+  }
+
+  .stats-floating-widget {
+    right: -4px;
+    width: 112px;
+  }
+
+  .floating-glass-badge {
+    left: 8px;
+  }
+
+  .hero-stats-deck {
+    gap: 9px;
+  }
+
+  .stat-card {
+    padding: 12px 10px;
+    gap: 9px;
+  }
+
+  .stat-icon-box {
+    width: 36px;
+    height: 36px;
+    flex: 0 0 36px;
+  }
+
+  .stat-icon-box i {
+    width: 18px;
+    height: 18px;
+  }
+
+  .stat-value {
+    font-size: 1.18rem;
+  }
+
+  .stat-label {
+    font-size: 0.72rem;
+  }
+
+  .mid-deck-grid {
+    gap: 18px;
+  }
+
+  .card-header-bar {
+    padding: 14px 15px;
+  }
+
+  .card-title {
+    font-size: 1.08rem;
+  }
+
+  .card-tag {
+    font-size: 0.65rem;
+    letter-spacing: 0.7px;
+  }
+
+  .about-card-content,
+  .skills-card-content {
+    padding: 15px;
+  }
+
+  .workspace-preview-box {
+    height: 160px;
+  }
+
+  .projects-section,
+  .experience-section {
+    padding: 30px 0;
+  }
+
+  .section-top-bar {
+    align-items: flex-start;
+  }
+
+  .projects-filter-bar {
+    width: 100%;
+    gap: 8px;
+  }
+
+  .filter-btn {
+    padding: 6px 11px;
+  }
+
+  .project-thumb-container {
+    height: 175px;
+  }
+
+  .timeline-container {
+    gap: 22px;
+    padding: 22px 15px 22px 21px;
+  }
+
+  .timeline-container::before {
+    left: 29px;
+    top: 26px;
+    bottom: 26px;
+  }
+
+  .timeline-item {
+    gap: 12px;
+  }
+
+  .timeline-dot {
+    width: 16px;
+    height: 16px;
+    flex: 0 0 16px;
+  }
+
+  .timeline-header {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .timeline-role {
+    font-size: 0.98rem;
+  }
+
+  .timeline-date {
+    font-size: 0.74rem;
+  }
+
+  .contact-card {
+    padding: 18px 15px;
+  }
+
+  .contact-grid {
+    gap: 24px;
+  }
+
+  .contact-heading {
+    font-size: 1.8rem;
+  }
+
+  .c-val {
+    font-size: 0.82rem;
+    overflow-wrap: anywhere;
+  }
+
+  .site-footer {
+    font-size: 0.76rem;
+  }
+
+  .ai-studio-grid {
+    gap: 20px;
+  }
+
+  .ai-chat-card {
+    height: 430px;
+    min-height: 0;
+  }
+
+  .ai-chat-header,
+  .ai-chat-footer {
+    padding: 12px;
+  }
+
+  .quick-chip-btn {
+    font-size: 0.7rem;
+    padding: 6px 9px;
+  }
+
+  .ai-showcase-card {
+    padding: 15px;
+  }
+
+  .ai-card-icon {
+    width: 40px;
+    height: 40px;
+    margin-left: 12px;
+  }
+
+  .ai-chat-modal {
+    width: calc(100vw - 20px);
+    right: 10px;
+    bottom: 10px;
+    max-height: calc(100dvh - 20px);
+  }
+
+  section[id] {
+    scroll-margin-top: 100px;
+  }
+}
+
+/* Respect reduced-motion preferences on touch devices too. */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}

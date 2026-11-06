@@ -1,0 +1,44 @@
+/* ==========================================================================
+   MASTER STYLESHEET — DEWA FEBRIAN PORTFOLIO
+   Modular CSS Component Architecture
+   ========================================================================== */
+
+/* 1. Global Base, Resets, Design Tokens, & Layout */
+@import url("css/global.css");
+
+/* 2. Canvas Background & Ambient Glow */
+@import url("components/canvas-background/canvas-background.css");
+
+/* 3. Left HUD Sidebar */
+@import url("components/sidebar/sidebar.css");
+
+/* 4. Top Navigation Bar */
+@import url("components/navbar/navbar.css");
+
+/* 5. Hero Section & Stats Deck */
+@import url("components/hero/hero.css");
+
+/* 6. About Me Section */
+@import url("components/about/about.css");
+
+/* 7. Skills & Radar Widget */
+@import url("components/skills/skills.css");
+
+/* 8. Featured Projects Grid */
+@import url("components/projects/projects.css");
+
+/* 9. Experience Timeline */
+@import url("components/experience/experience.css");
+
+/* 10. Contact Section & Footer */
+@import url("components/contact/contact.css");
+
+/* 11. Modal & Toast Notifications */
+@import url("components/modal-toast/modal-toast.css");
+@import url("components/modal-toast/ai-chat.css");
+
+/* 12. AI Studio Chat & Showcase */
+@import url("components/ai-studio/ai-studio.css");
+
+/* 13. Responsive layouts for tablet and mobile */
+@import url("css/responsive.css");

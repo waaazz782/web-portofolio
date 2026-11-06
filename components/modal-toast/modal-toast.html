@@ -1,0 +1,14 @@
+<!-- MODAL & TOAST NOTIFICATION COMPONENT -->
+<div class="project-modal-backdrop" id="projectModalBackdrop" onclick="closeProjectModal(event)">
+  <div class="project-modal-box glass-panel" onclick="event.stopPropagation()">
+    <button class="modal-close-btn" onclick="closeProjectModal()">
+      <i data-lucide="x"></i>
+    </button>
+    <div id="modalDynamicContent"></div>
+  </div>
+</div>
+
+<div class="toast-notification" id="toastBox">
+  <i data-lucide="check-circle-2" class="toast-icon"></i>
+  <span id="toastMsg">Message sent successfully!</span>
+</div>

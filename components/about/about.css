@@ -1,0 +1,109 @@
+/* ==========================================================================
+   ABOUT COMPONENT STYLES
+   ========================================================================== */
+
+.about-card-content {
+  padding: 24px;
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 20px;
+  align-items: center;
+}
+
+.about-bio {
+  font-size: 0.95rem;
+  color: var(--text-primary, #ffffff);
+  line-height: 1.65;
+  margin-bottom: 10px;
+}
+.about-bio strong {
+  color: var(--light-violet, #c084fc);
+}
+
+.about-bio-secondary {
+  font-size: 0.88rem;
+  color: var(--text-secondary, #94a3b8);
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.about-action-row {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.location-badge {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.8rem;
+  color: var(--text-muted, #64748b);
+}
+
+.workspace-preview-box {
+  position: relative;
+  border-radius: var(--radius-md, 14px);
+  overflow: hidden;
+  background: rgba(10, 7, 20, 0.7);
+  border: 1px solid rgba(168, 85, 247, 0.2);
+  height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.workstation-img-wrap {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: var(--radius-md, 14px);
+}
+
+.workstation-live-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+.workspace-overlay {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 5;
+}
+
+.live-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 10px;
+  background: rgba(10, 8, 20, 0.85);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: var(--radius-full, 9999px);
+  font-size: 0.72rem;
+  color: #fff;
+  font-weight: 500;
+}
+
+.pulsing-green {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #10b981;
+  box-shadow: 0 0 8px #10b981;
+  animation: pulseGlow 1.5s infinite;
+}
+
+@keyframes pulseGlow {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.4; transform: scale(1.3); }
+}
+
+@media (max-width: 900px) {
+  .about-card-content {
+    grid-template-columns: 1fr;
+  }
+}

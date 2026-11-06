@@ -1,0 +1,326 @@
+<!-- HERO SECTION COMPONENT -->
+<section id="hero" class="hero-section">
+  <div class="hero-content-grid">
+    
+    <!-- LEFT COLUMN: INTRO & CTAs -->
+    <div class="hero-left">
+      <div class="badge-pill hero-greeting">
+        <span class="wave-emoji">👋</span>
+        <span>Hello, I'm</span>
+      </div>
+
+      <h1 class="hero-title">
+        <span class="title-white">Dewa</span><br />
+        <span class="hero-typing-wrapper">
+          <span class="title-purple-gradient glow-text" id="heroTypingText" data-text="Amrnsyh">Amrnsyh</span><span class="typing-cursor">|</span>
+        </span>
+      </h1>
+
+      <div class="role-badge-row">
+        <div class="flutter-role-tag">
+          <svg viewBox="0 0 24 24" class="inline-flutter-icon" fill="none">
+            <path d="M14.3 2.1L3.9 12.5l3.2 3.2L19.5 3.3z" fill="#02569B"/>
+            <path d="M14.3 14.3l-4.2 4.2 3.2 3.2 5.8-5.8z" fill="#0175C2"/>
+            <path d="M7.1 15.7l3.2 3.2 3.2-3.2-3.2-3.2z" fill="#29B6F6"/>
+            <path d="M19.5 3.3L13.3 9.5l3.2 3.2 5.8-5.8z" fill="#02569B" opacity="0.6"/>
+          </svg>
+          <span class="highlight-purple">Flutter Developer</span>
+          <span class="dot-separator">•</span>
+          <span class="highlight-gray">UI/UX Enthusiast</span>
+        </div>
+      </div>
+
+      <p class="hero-desc">
+        I build modern, responsive, and user-friendly digital experiences with clean code and thoughtful design. Specialized in crafting reactive Flutter apps and high-performance cross-platform interfaces.
+      </p>
+
+      <div class="hero-btn-group">
+        <a href="#projects-section" class="btn-glow-primary hero-cta-btn">
+          <span>View My Work</span>
+          <i data-lucide="arrow-right" class="btn-arrow"></i>
+        </a>
+        <a href="#contact-section" class="btn-glass-secondary">
+          <span>Contact Me</span>
+          <i data-lucide="message-square" class="btn-icon"></i>
+        </a>
+      </div>
+
+      <div class="hero-socials">
+        <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn" title="GitHub">
+          <i data-lucide="github"></i>
+        </a>
+        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn" title="LinkedIn">
+          <i data-lucide="linkedin"></i>
+        </a>
+        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn" title="Instagram">
+          <i data-lucide="instagram"></i>
+        </a>
+        <a href="mailto:dewafebrian@dev.io" class="social-icon-btn" title="Email">
+          <i data-lucide="mail"></i>
+        </a>
+        <a href="#contact-section" class="social-icon-btn" title="Website / Globe">
+          <i data-lucide="globe"></i>
+        </a>
+      </div>
+    </div>
+
+    <!-- RIGHT COLUMN: FUTURISTIC AVATAR & CODE WIDGET -->
+    <div class="hero-right">
+      <div class="avatar-stage">
+        
+        <!-- Multi-Layered Sci-Fi HUD Portal Ring with Rotating Radial Rays Diagram -->
+        <div class="neon-portal-ring">
+          <!-- Layer 0: Ambient Energy Glow Behind -->
+          <div class="hud-glow-backdrop"></div>
+
+          <!-- Layer 1: SVG Sci-Fi HUD Radar & Radial Rays Diagram (Rotating Clockwise) -->
+          <svg class="hud-svg-diagram hud-spin-cw" viewBox="0 0 500 500">
+            <defs>
+              <linearGradient id="hudGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#c084fc" />
+                <stop offset="50%" stop-color="#ffffff" />
+                <stop offset="100%" stop-color="#7c3aed" />
+              </linearGradient>
+              <linearGradient id="hudGradCyan" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%" stop-color="#38bdf8" />
+                <stop offset="100%" stop-color="#a855f7" />
+              </linearGradient>
+              <filter id="hudNeonGlow" x="-50%" y="-50%" width="200%" height="200%">
+                <feGaussianBlur stdDeviation="3" result="blur1" />
+                <feGaussianBlur stdDeviation="8" result="blur2" />
+                <feMerge>
+                  <feMergeNode in="blur2" />
+                  <feMergeNode in="blur1" />
+                  <feMergeNode in="SourceGraphic" />
+                </feMerge>
+              </filter>
+            </defs>
+
+            <!-- 36 Radial Ray Lines around Circle (Radial HUD Ticks from Reference Image) -->
+            <g class="hud-radial-ticks" filter="url(#hudNeonGlow)">
+              <line x1="250" y1="22" x2="250" y2="56" stroke="#38bdf8" stroke-width="3" stroke-linecap="round" />
+              <line x1="250" y1="36" x2="250" y2="50" stroke="#c084fc" stroke-width="1.8" stroke-linecap="round" transform="rotate(10 250 250)" />
+              <line x1="250" y1="36" x2="250" y2="50" stroke="#c084fc" stroke-width="1.8" stroke-linecap="round" transform="rotate(20 250 250)" />
+              <line x1="250" y1="28" x2="250" y2="52" stroke="#ffffff" stroke-width="2.4" stroke-linecap="round" transform="rotate(30 250 250)" />
+              <line x1="250" y1="36" x2="250" y2="50" stroke="#c084fc" stroke-width="1.8" stroke-linecap="round" transform="rotate(40 250 250)" />
+              <line x1="250" y1="36" x2="250" y2="50" stroke="#c084fc" stroke-width="1.8" stroke-linecap="round" transform="rotate(50 250 250)" />
+              <line x1="250" y1="28" x2="250" y2="52" stroke="#ffffff" stroke-width="2.4" stroke-linecap="round" transform="rotate(60 250 250)" />
+              <line x1="250" y1="36" x2="250" y2="50" stroke="#c084fc" stroke-width="1.8" stroke-linecap="round" transform="rotate(70 250 250)" />
+              <line x1="250" y1="36" x2="250" y2="50" stroke="#c084fc" stroke-width="1.8" stroke-linecap="round" transform="rotate(80 250 250)" />
+              <line x1="250" y1="22" x2="250" y2="56" stroke="#38bdf8" stroke-width="3" stroke-linecap="round" transform="rotate(90 250 250)" />
+              <line x1="250" y1="36" x2="250" y2="50" stroke="#c084fc" stroke-width="1.8" stroke-linecap="round" transform="rotate(100 250 250)" />
+              <line x1="250" y1="36" x2="250" y2="50" stroke="#c084fc" stroke-width="1.8" stroke-linecap="round" transform="rotate(110 250 250)" />
+              <line x1="250" y1="28" x2="250" y2="52" stroke="#ffffff" stroke-width="2.4" stroke-linecap="round" transform="rotate(120 250 250)" />
+              <line x1="250" y1="36" x2="250" y2="50" stroke="#c084fc" stroke-width="1.8" stroke-linecap="round" transform="rotate(130 250 250)" />
+              <line x1="250" y1="36" x2="250" y2="50" stroke="#c084fc" stroke-width="1.8" stroke-linecap="round" transform="rotate(140 250 250)" />
+              <line x1="250" y1="28" x2="250" y2="52" stroke="#ffffff" stroke-width="2.4" stroke-linecap="round" transform="rotate(150 250 250)" />
+              <line x1="250" y1="36" x2="250" y2="50" stroke="#c084fc" stroke-width="1.8" stroke-linecap="round" transform="rotate(160 250 250)" />
+              <line x1="250" y1="36" x2="250" y2="50" stroke="#c084fc" stroke-width="1.8" stroke-linecap="round" transform="rotate(170 250 250)" />
+              <line x1="250" y1="22" x2="250" y2="56" stroke="#38bdf8" stroke-width="3" stroke-linecap="round" transform="rotate(180 250 250)" />
+              <line x1="250" y1="36" x2="250" y2="50" stroke="#c084fc" stroke-width="1.8" stroke-linecap="round" transform="rotate(190 250 250)" />
+              <line x1="250" y1="36" x2="250" y2="50" stroke="#c084fc" stroke-width="1.8" stroke-linecap="round" transform="rotate(200 250 250)" />
+              <line x1="250" y1="28" x2="250" y2="52" stroke="#ffffff" stroke-width="2.4" stroke-linecap="round" transform="rotate(210 250 250)" />
+              <line x1="250" y1="36" x2="250" y2="50" stroke="#c084fc" stroke-width="1.8" stroke-linecap="round" transform="rotate(220 250 250)" />
+              <line x1="250" y1="36" x2="250" y2="50" stroke="#c084fc" stroke-width="1.8" stroke-linecap="round" transform="rotate(230 250 250)" />
+              <line x1="250" y1="28" x2="250" y2="52" stroke="#ffffff" stroke-width="2.4" stroke-linecap="round" transform="rotate(240 250 250)" />
+              <line x1="250" y1="36" x2="250" y2="50" stroke="#c084fc" stroke-width="1.8" stroke-linecap="round" transform="rotate(250 250 250)" />
+              <line x1="250" y1="36" x2="250" y2="50" stroke="#c084fc" stroke-width="1.8" stroke-linecap="round" transform="rotate(260 250 250)" />
+              <line x1="250" y1="22" x2="250" y2="56" stroke="#38bdf8" stroke-width="3" stroke-linecap="round" transform="rotate(270 250 250)" />
+              <line x1="250" y1="36" x2="250" y2="50" stroke="#c084fc" stroke-width="1.8" stroke-linecap="round" transform="rotate(280 250 250)" />
+              <line x1="250" y1="36" x2="250" y2="50" stroke="#c084fc" stroke-width="1.8" stroke-linecap="round" transform="rotate(290 250 250)" />
+              <line x1="250" y1="28" x2="250" y2="52" stroke="#ffffff" stroke-width="2.4" stroke-linecap="round" transform="rotate(300 250 250)" />
+              <line x1="250" y1="36" x2="250" y2="50" stroke="#c084fc" stroke-width="1.8" stroke-linecap="round" transform="rotate(310 250 250)" />
+              <line x1="250" y1="36" x2="250" y2="50" stroke="#c084fc" stroke-width="1.8" stroke-linecap="round" transform="rotate(320 250 250)" />
+              <line x1="250" y1="28" x2="250" y2="52" stroke="#ffffff" stroke-width="2.4" stroke-linecap="round" transform="rotate(330 250 250)" />
+              <line x1="250" y1="36" x2="250" y2="50" stroke="#c084fc" stroke-width="1.8" stroke-linecap="round" transform="rotate(340 250 250)" />
+              <line x1="250" y1="36" x2="250" y2="50" stroke="#c084fc" stroke-width="1.8" stroke-linecap="round" transform="rotate(350 250 250)" />
+            </g>
+
+            <!-- Concentric Tech Circles & Dashes -->
+            <circle cx="250" cy="250" r="218" stroke="#a855f7" stroke-width="1.5" stroke-dasharray="8 12" fill="none" opacity="0.8" />
+            <circle cx="250" cy="250" r="232" stroke="#38bdf8" stroke-width="1.2" stroke-dasharray="4 20" fill="none" opacity="0.6" />
+            <circle cx="250" cy="250" r="242" stroke="#c084fc" stroke-width="1.5" stroke-dasharray="40 80 15 80" fill="none" opacity="0.75" />
+            
+            <!-- Quadrant Corner Target Markers -->
+            <circle cx="250" cy="18" r="3.5" fill="#ffffff" filter="url(#hudNeonGlow)" />
+            <circle cx="250" cy="482" r="3.5" fill="#38bdf8" filter="url(#hudNeonGlow)" />
+            <circle cx="18" cy="250" r="3.5" fill="#38bdf8" filter="url(#hudNeonGlow)" />
+            <circle cx="482" cy="250" r="3.5" fill="#ffffff" filter="url(#hudNeonGlow)" />
+          </svg>
+
+          <!-- Layer 2: Counter-Rotating Secondary HUD Ring (Outer Tech Arcs) -->
+          <svg class="hud-svg-diagram hud-spin-ccw" viewBox="0 0 500 500">
+            <circle cx="250" cy="250" r="226" stroke="#c084fc" stroke-width="2" stroke-dasharray="3 15" fill="none" opacity="0.7" />
+            <circle cx="250" cy="250" r="238" stroke="url(#hudGrad1)" stroke-width="2.5" stroke-dasharray="60 30 15 30" fill="none" opacity="0.85" filter="url(#hudNeonGlow)" />
+            <!-- Cardinal Accent Brackets -->
+            <path d="M 230 12 A 238 238 0 0 1 270 12" stroke="#ffffff" stroke-width="3" fill="none" />
+            <path d="M 230 488 A 238 238 0 0 0 270 488" stroke="#38bdf8" stroke-width="3" fill="none" />
+            <path d="M 12 230 A 238 238 0 0 0 12 270" stroke="#38bdf8" stroke-width="3" fill="none" />
+            <path d="M 488 230 A 238 238 0 0 1 488 270" stroke="#ffffff" stroke-width="3" fill="none" />
+          </svg>
+
+          <!-- Layer 3: Solid Inner Luminous Neon Ring (Framing Portrait) -->
+          <div class="ring-core-conic"></div>
+
+          <!-- Layer 4: Sweeping White/Cyan Laser Flare Arc -->
+          <div class="ring-beam-flare"></div>
+        </div>
+
+        <!-- Tech Orbiting Badges -->
+        <div class="orbit-badge badge-flutter" title="Flutter Specialist">
+          <svg viewBox="0 0 32 32" class="orbit-svg">
+            <path d="M19.5 2.8L5.3 17l4.3 4.3L26.6 4.4z" fill="#38BDF8"/>
+            <path d="M19.5 19.5l-5.7 5.7 4.3 4.3 7.9-7.9z" fill="#0284C7"/>
+            <path d="M9.6 21.3l4.3 4.3 4.3-4.3-4.3-4.3z" fill="#0EA5E9"/>
+          </svg>
+        </div>
+
+        <!-- Cyan Glowing Diamond Orbit Badge (from reference image) -->
+        <div class="orbit-badge badge-diamond" title="Futuristic Core">
+          <div class="diamond-inner"></div>
+        </div>
+
+        <!-- Floating Code Snippet Card -->
+        <div class="floating-glass-card code-snippet-widget">
+          <div class="code-card-header">
+            <span class="dot dot-red"></span>
+            <span class="dot dot-yellow"></span>
+            <span class="dot dot-green"></span>
+            <span class="code-filename">main.dart</span>
+          </div>
+          <div class="code-card-body">
+            <pre><code><span class="c-keyword">Widget</span> <span class="c-fn">build</span>(<span class="c-type">BuildContext</span> context) {
+  <span class="c-keyword">return</span> <span class="c-class">MaterialApp</span>(
+    <span class="c-param">home:</span> <span class="c-class">Scaffold</span>(
+      <span class="c-param">body:</span> <span class="c-class">Center</span>(
+        <span class="c-param">child:</span> <span class="c-class">Text</span>(<span class="c-str">'Hello World'</span>),
+      ),
+    ),
+  );
+}</code></pre>
+          </div>
+        </div>
+
+        <!-- Floating Developer Badge -->
+        <div class="floating-glass-badge badge-role-fl">
+          <div class="badge-icon-wrap"><i data-lucide="terminal"></i></div>
+          <div class="badge-text">
+            <div class="badge-title">Flutter Developer</div>
+            <div class="badge-sub">Mobile & Web Apps</div>
+          </div>
+        </div>
+
+        <!-- Floating Experience Badge -->
+        <div class="floating-glass-card stats-floating-widget">
+          <div class="stat-mini-row">
+            <span class="stat-bold-num">2+</span>
+            <span class="stat-mini-label">Years Experience</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-mini-row">
+            <span class="stat-bold-num">15+</span>
+            <span class="stat-mini-label">Projects Completed</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-mini-row">
+            <span class="stat-bold-num star-rating">5 <i data-lucide="star" class="star-icon"></i></span>
+            <span class="stat-mini-label">Client Rating</span>
+          </div>
+        </div>
+
+        <!-- Realistic Developer Portrait Artwork Container -->
+        <div class="developer-portrait-wrapper">
+          <div class="portrait-silhouette">
+            <div class="portrait-avatar-art">
+              <svg viewBox="0 0 360 480" class="portrait-svg-art">
+                <defs>
+                  <linearGradient id="skin-grad" x1="0" y1="0" x2="0" y2="1">
+                    <stop stop-color="#4B3A4F" />
+                    <stop offset="0.6" stop-color="#241B2E" />
+                    <stop offset="1" stop-color="#0F0C1B" />
+                  </linearGradient>
+                  <linearGradient id="hoodie-grad" x1="0" y1="0" x2="1" y2="1">
+                    <stop stop-color="#1E1633" />
+                    <stop offset="0.5" stop-color="#120D22" />
+                    <stop offset="1" stop-color="#08060F" />
+                  </linearGradient>
+                  <linearGradient id="neon-rim-purple" x1="0" y1="0" x2="1" y2="0">
+                    <stop stop-color="#C084FC" />
+                    <stop offset="1" stop-color="#818CF8" stop-opacity="0" />
+                  </linearGradient>
+                  <filter id="neon-glow-filter" x="-20%" y="-20%" width="140%" height="140%">
+                    <feGaussianBlur stdDeviation="6" result="blur" />
+                    <feComposite in="SourceGraphic" in2="blur" operator="over" />
+                  </filter>
+                </defs>
+                
+                <path d="M40 480 C 40 380, 110 320, 180 320 C 250 320, 320 380, 320 480 Z" fill="url(#hoodie-grad)" />
+                <path d="M180 320 C 250 320, 320 380, 320 480" stroke="#A855F7" stroke-width="4" fill="none" opacity="0.8" filter="url(#neon-glow-filter)" />
+                <path d="M40 480 C 40 380, 110 320, 180 320" stroke="#38BDF8" stroke-width="2.5" fill="none" opacity="0.6" filter="url(#neon-glow-filter)" />
+                <path d="M150 250 L 210 250 L 220 330 L 140 330 Z" fill="#1C1628" />
+                <path d="M140 140 C 140 80, 220 70, 230 130 C 240 180, 235 240, 190 270 C 155 270, 135 220, 140 140 Z" fill="url(#skin-grad)" />
+                <path d="M225 150 C 235 180, 225 225, 205 245 C 190 260, 175 265, 160 265" stroke="#E9D5FF" stroke-width="2.5" fill="none" opacity="0.9" filter="url(#neon-glow-filter)" />
+                <path d="M210 180 C 215 195, 205 210, 195 215" stroke="#C084FC" stroke-width="2" fill="none" opacity="0.75" />
+                <path d="M130 130 C 130 60, 190 40, 240 80 C 255 110, 240 150, 230 150 C 210 110, 160 90, 130 130 Z" fill="#0A0713" />
+                <path d="M135 110 C 160 65, 220 55, 245 85" stroke="#C084FC" stroke-width="3" fill="none" opacity="0.85" filter="url(#neon-glow-filter)" />
+                <circle cx="155" cy="185" r="8" fill="#2A1B3D" stroke="#A855F7" stroke-width="1.5" />
+                <circle cx="155" cy="185" r="3" fill="#38BDF8" filter="url(#neon-glow-filter)" />
+              </svg>
+            </div>
+            <div class="portrait-rim-light"></div>
+            <div class="portrait-neon-filter"></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+  <!-- HERO BOTTOM STATS BAR -->
+  <div class="hero-stats-deck">
+    <div class="stat-card glass-panel">
+      <div class="stat-icon-box"><i data-lucide="layers"></i></div>
+      <div class="stat-info">
+        <span class="stat-value" data-count="10">10+</span>
+        <span class="stat-label">Projects</span>
+      </div>
+      <div class="stat-glow-line"></div>
+    </div>
+
+    <div class="stat-card glass-panel">
+      <div class="stat-icon-box"><i data-lucide="clock"></i></div>
+      <div class="stat-info">
+        <span class="stat-value" data-count="2">2+</span>
+        <span class="stat-label">Years Learning</span>
+      </div>
+      <div class="stat-glow-line"></div>
+    </div>
+
+    <div class="stat-card glass-panel">
+      <div class="stat-icon-box"><i data-lucide="cpu"></i></div>
+      <div class="stat-info">
+        <span class="stat-value" data-count="5">5+</span>
+        <span class="stat-label">Technologies</span>
+      </div>
+      <div class="stat-glow-line"></div>
+    </div>
+
+    <div class="stat-card glass-panel">
+      <div class="stat-icon-box"><i data-lucide="flame"></i></div>
+      <div class="stat-info">
+        <span class="stat-value" data-count="100">100%</span>
+        <span class="stat-label">Passion</span>
+      </div>
+      <div class="stat-glow-line"></div>
+    </div>
+  </div>
+
+  <!-- Scroll Indicator -->
+  <a href="#about-section" class="scroll-indicator" title="Scroll Down">
+    <span class="mouse-icon">
+      <span class="mouse-wheel"></span>
+    </span>
+    <span class="scroll-text">EXPLORE</span>
+  </a>
+</section>
